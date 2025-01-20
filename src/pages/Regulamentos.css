@@ -1,0 +1,72 @@
+/* Estilos do banner */
+.banner {
+    position: relative;
+    height: 200px;
+    background: url("../imgs/banner-historia.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+  }
+  
+  .banner-title {
+    position: relative;
+    color: #000;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Lista de documentos */
+  .documentos-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .documento-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .documento-titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .documento-botoes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .botao {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .botao.download {
+    background-color: #007B5E;
+    color: #fff;
+  }
+  
+  .botao.visualizar {
+    background-color: #fff;
+    color: #007B5E;
+    border: 1px solid #007B5E;
+  }
+  

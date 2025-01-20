@@ -1,0 +1,108 @@
+/* Contêiner principal */
+.lastmatches-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Cada partida */
+.lastmatches-item {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  width: 200px;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lastmatches-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Data e hora da partida */
+.lastmatches-item-details {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Informações do time */
+.team-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+/* Escudo do time */
+.lastmatches-item-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #ddd;
+  padding: 5px;
+  transition: all 0.3s;
+}
+
+.lastmatches-item-img:hover {
+  transform: scale(1.1);
+  border-color: #ffcc00;
+}
+
+/* Nome (sigla) do time */
+.lastmatches-item-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Placar */
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #ff5757, #ffa751);
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(255, 87, 87, 0.5);
+}
+
+/* Estilo para jogos sem placar (futuro) */
+.score.no-result {
+  background: linear-gradient(90deg, #cccccc, #dddddd);
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .lastmatches-item {
+    width: 160px;
+    padding: 10px;
+  }
+
+  .lastmatches-item-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .lastmatches-item-name {
+    font-size: 12px;
+  }
+
+  .score {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+}

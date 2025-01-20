@@ -1,0 +1,64 @@
+.formularios-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cards */
+.formulario-card {
+    margin-bottom: 30px;
+    background-color: #d9e3e7; 
+    border: 1px solid #00695c; 
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.formulario-title {
+    margin: 0 0 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff; 
+    background-color: #00695c; 
+    border-radius: 5px 5px 0 0; 
+    text-align: center;
+}
+
+.formulario-list {
+    list-style: none;
+    padding: 0;
+}
+
+.formulario-item {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center; 
+}
+
+.formulario-item:hover {
+    text-decoration: underline;
+    font-weight: bold; 
+}
+
+/* WhatsApp */
+.whatsapp-cta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #1ebe5d;
+}

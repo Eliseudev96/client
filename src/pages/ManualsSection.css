@@ -1,0 +1,105 @@
+.manuals-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #046464;
+}
+  
+  .banner {
+    position: relative;
+    background: url("../imgs/banner-historia.jpg") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-title {
+    font-family: "Times New Roman", serif;
+    font-size: 3rem;
+    color: #333;
+    z-index: 2;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 650px; 
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: calc(33.33% - 1rem); 
+    max-width: 200px; 
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+  }
+  
+  .card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    color: #555;
+  }

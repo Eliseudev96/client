@@ -1,0 +1,29 @@
+.sponsors-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .sponsors-top {
+    margin-bottom: 40px;
+  }
+  
+  .sponsor-logo-top {
+    max-width: 160px;
+    height: auto;
+  }
+  
+  .sponsors-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sponsor-logo {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+  

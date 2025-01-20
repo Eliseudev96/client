@@ -1,0 +1,119 @@
+/* Aplicando cor de fundo para todo o site */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Cor de fundo cinza */
+  font-family: Arial, sans-serif; /* Fonte global */
+  box-sizing: border-box; /* Para garantir que padding e bordas sejam considerados */
+}
+
+/* Container geral */
+.banner-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px; /* Limita a largura máxima */
+  padding-left: 40px; /* Espaço à esquerda */
+  padding-right: 40px; /* Espaço à direita */
+  box-sizing: border-box; /* Garante que o padding seja considerado no tamanho total */
+  background-color: #f0f0f0; /* Garante que o fundo interno também seja cinza */
+}
+
+.banner-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid geral */
+.banner-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Destaque principal */
+.banner-main {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.banner-main-image-container {
+  flex: 2;
+}
+
+.banner-main-image {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.banner-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.banner-main-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.banner-main-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Outros banners (em três colunas) */
+.banner-secondary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espaçamento entre os banners */
+}
+
+.banner-item {
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-secondary-image {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.banner-item-title {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.banner-item-description {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .banner-secondary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-secondary {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-container {
+    padding-left: 20px; /* Ajusta o padding em telas menores */
+    padding-right: 20px;
+  }
+}

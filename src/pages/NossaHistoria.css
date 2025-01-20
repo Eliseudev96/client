@@ -1,0 +1,89 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Seção principal */
+  .nossa-historia {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* Banner */
+  .nossa-historia .banner {
+    position: relative;
+    background: url("../imgs/banner-historia.jpg") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nossa-historia .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nossa-historia .banner h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 3rem;
+    color: #333;
+    z-index: 2;
+  }
+  
+  /* Texto */
+  .nossa-historia .content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .nossa-historia .content p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  
+  /* Imagem */
+  .nossa-historia .imagem-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .nossa-historia .imagem {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .nossa-historia .banner {
+      height: 300px;
+    }
+  
+    .nossa-historia .banner h1 {
+      font-size: 2rem;
+    }
+  
+    .nossa-historia .content {
+      padding: 15px;
+    }
+  }
+  
